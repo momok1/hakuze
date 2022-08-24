@@ -2,11 +2,99 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>page 2</title>
 </head>
 <body>
-    <h1>this is page 2, welcome~</h1>
+    <div>
+        <!--锚点链接，在页面内导航到连接所在的地方，需要#定义锚点-->
+        <a href ="#label1">label 1</a>
+        <a href ="#label2">label 2</a>
+        <a href ="#label3">label 3</a>
+    </div>
+
+
+    <div id ="label1">
+        <h1>表单</h1>
+        <form method="post">
+            账号：<input type ="text" value ="这里输入" size ="15"/><br/>
+            密码：<input type ="password" maxlength ="10" size ="15"/><br/>
+
+            性别：
+            <label><input type ="radio" name ="gender" value ="man" checked/>男</label>
+            <label><input type ="radio" name ="gender" value ="women"/> 女</label>
+            <br/>
+
+            已会语言：
+            <select>
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>jQuery</option>
+                <option selected>JavaScript</option>
+                <option>Vue.js</option>
+            </select>
+            <br/>
+
+            想学语言：
+            <select multiple size ="5"> <!--选取多项，可以使用“Ctrl+鼠标左键”来选取; size >=4  -->
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>jQuery</option>
+                <option>JavaScript</option>
+                <option>Vue.js</option>
+            </select>
+            <br/>
+
+            喜欢的水果：<br/>
+            <label>
+                <input type="checkbox" name="fruit" value="苹果"/>苹果
+                <input type="checkbox" name="fruit" value="香蕉"/>香蕉
+                <input type="checkbox" name="fruit" value="西瓜"/>西瓜
+                <input type="checkbox" name="fruit" value="李子"/>李子
+            </label>
+            <br/>
+
+            文件补充：<br/>
+            <input type="file"/>
+            <br/>
+
+            其他：<br/>
+            <textarea rows="5" cols="20">请介绍一下你自己</textarea>
+            <br/>
+
+            <input type="button" value="确定" />
+            <input type="reset" value="重置" />
+            <input type="submit" value="提交"/>
+
+        </form>
+    </div>
+
+
+    <div id ="label2">
+        <h1>文本</h1>
+        <p> 
+            <br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;勾股定理直角三角形：a<sup>2</sup>+b<sub>2</sub> =c<sup>2</sup>。</p>
+        <hr/>
+    </div>
+
+
+
+    <div id ="label3">
+        <h1>框架</h1>
+        <div>
+            <iframe src="http://www.lvyestudy.com" width="200" height="150"></iframe>
+            <iframe src="http://www.sina.com" width="200" height="150"></iframe>
+        </div>
+       
+        <hr/>
+    </div>
+
+    <div>
+        <h1>语文</h1>
+        <p> 
+            <br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;《三国演义》中国古典四大名著之一。元末明初小说家罗贯中所著，是中国第一部长篇章回体小说。描写了从东汉末年到西晋初年之间近100年的历史风云</p>
+        <hr/>
+    </div>
 </body>
 </html>

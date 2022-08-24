@@ -1,0 +1,21 @@
+body{
+    background-color: cadetblue;
+}
+
+a{
+    color :rgb(0, 0, 0);
+}
+a:visited{
+    color :yellow;
+}
+a:hover{
+    color :aliceblue;
+}
+a:active{
+    color: red;
+}
+
+div{
+    background-color: aliceblue;
+    margin: 20px;
+}
